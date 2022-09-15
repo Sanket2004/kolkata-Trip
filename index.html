@@ -5,26 +5,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌟</text></svg>" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌟</text></svg>"
+        type="image/x-icon">
 </head>
 
-<body>
-    <style>
-        @import url('http://fonts.cdnfonts.com/css/choco-cooky');
-        @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
-
-        @font-face {
-            font-family: ChocoCooky;
-            src: url(./Chococooky.ttf);
-        }
-
-        * {
-            font-family: 'ChocoCooky', sans-serif;
-            font-weight: 700;
-            letter-spacing: 1.2px;
-        }
-    </style>
-    <audio id="bg_audio" src="./Shohor jure jeno - Anupam Roy.mp3" autoplay loop="loop"></audio>
+<body onclick="playSound()">
+    <audio id="bg_audio" src="https://dns4.vippendu.com/download/48k-abmui/Kolkata.mp3" autoplay loop="loop"></audio>
     <div class="container mt-2">
         <div class="card">
             <div class="card-body">
@@ -32,12 +19,12 @@
                     <center>
                         <h3>Make Memories</h3>
                     </center>
-                    <textarea style="background: antiquewhite;" id="post" class="form-control"
-                        placeholder="What's on your mind..." required></textarea>
-                    <input style="background: antiquewhite;" type="file" class="form-control" id="image"
+                    <textarea style="background: antiquewhite;letter-spacing: 2px;" id="post"
+                        class="form-control" placeholder="What's on your mind..." required></textarea>
+                    <input style="background: antiquewhite;letter-spacing: 2px;" type="file" class="form-control" id="image"
                         accept="image/png, image/gif, image/jpeg" required>
                     <div class="text-center">
-                        <button type="submit" style="background-color:brown;border: none; outline: none;"
+                        <button type="button" style="background-color:brown;border: none; outline: none;letter-spacing: 2px;"
                             class="btn btn-success" onclick="upload()">Upload</button>
                     </div>
 
@@ -90,6 +77,9 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="defualt.js"></script>
+    <script>
+        let playSound = () => new Audio("https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-jump-coin-216.mp3").play();
+    </script>
 </body>
 
 </html>
