@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌟</text></svg>" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌟</text></svg>"
+        type="image/x-icon">
 </head>
 
 <body>
@@ -13,8 +15,13 @@
         @import url('http://fonts.cdnfonts.com/css/choco-cooky');
         @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
 
+        @font-face {
+            font-family: ChockyCooky;
+            src: url(./Chococooky.ttf);
+        }
+
         * {
-            font-family: 'Choco cooky', sans-serif;
+            font-family: 'ChockyCooky', sans-serif;
             font-weight: 700;
             letter-spacing: 1.2px;
         }
@@ -27,9 +34,9 @@
                     <center>
                         <h3>Make Memories</h3>
                     </center>
-                    <textarea style="background: antiquewhite;" id="post" class="form-control"
+                    <textarea style="background:rgb(170, 168, 168);" id="post" class="form-control"
                         placeholder="What's on your mind..." required></textarea>
-                    <input style="background: antiquewhite;" type="file" class="form-control" id="image"
+                    <input style="background:rgb(170, 168, 168);" type="file" class="form-control" id="image"
                         accept="image/png, image/gif, image/jpeg" required>
                     <div class="text-center">
                         <button type="submit" style="background-color:brown;border: none; outline: none;"

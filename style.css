@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff&family=Montserrat:wght@500&display=swap');
+@font-face {
+    font-family:ChockyCooky ;
+    src: url(./Chococooky.ttf);
+}
 
 body {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cb/Howrah_bridge_at_night.jpg');
+   background-color:rgb(203, 198, 198);
     background-attachment: fixed;
     backdrop-filter: blur(5px);
     background-repeat: no-repeat;
