@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Kolkata Trip | GDG 2022</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🌟</text></svg>" type="image/x-icon">
+</head>
+
+<body>
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/choco-cooky');
+        @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+        * {
+            font-family: 'Choco cooky', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+        }
+    </style>
+    <audio id="bg_audio" src="./Shohor jure jeno - Anupam Roy.mp3" autoplay loop="loop"></audio>
+    <div class="container mt-2">
+        <div class="card">
+            <div class="card-body">
+                <form id="post-form">
+                    <center>
+                        <h3>Make Memories</h3>
+                    </center>
+                    <textarea style="background: antiquewhite;" id="post" class="form-control"
+                        placeholder="What's on your mind..." required></textarea>
+                    <input style="background: antiquewhite;" type="file" class="form-control" id="image"
+                        accept="image/png, image/gif, image/jpeg" required>
+                    <div class="text-center">
+                        <button type="submit" style="background-color:brown;border: none; outline: none;"
+                            class="btn btn-success" onclick="upload()">Upload</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+        <div class="row mt-4" id="posts">
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first...make sure you remove -app from below line -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBEoSMt_cjD3Y6fRO4yj02MZ8avf8C1k8g",
+            authDomain: "blogs-e2cfc.firebaseapp.com",
+            databaseURL: "https://blogs-e2cfc-default-rtdb.firebaseio.com",
+            projectId: "blogs-e2cfc",
+            storageBucket: "blogs-e2cfc.appspot.com",
+            messagingSenderId: "596676603591",
+            appId: "1:596676603591:web:26da72c6ebc5c717bcd8e2",
+            measurementId: "G-7ZXEQVV18V"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="defualt.js"></script>
+</body>
+
+</html>
